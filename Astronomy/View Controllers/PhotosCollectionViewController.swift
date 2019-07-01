@@ -13,7 +13,7 @@ class PhotosCollectionViewController: UIViewController, UICollectionViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        client.fetchMarsRover(named: "curiosity") { (rover, error) in
+        client.fetchMarsRover(named: "Curiosity") { (rover, error) in
             if let error = error {
                 NSLog("Error fetching info for curiosity: \(error)")
                 return
